@@ -1,0 +1,81 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-28T02:44:23.724Z",
+        "line": 30,
+        "name": "Login to gmail",
+        "description": "",
+        "id": "login;login-to-gmail;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User is in Signin page",
+            "match": {
+              "location": "StepDefinitions.Loginsteps.user_is_in_Signin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User enters vaild pravallikasample@gmail.com and Test@12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345",
+                  "offset": 54
+                }
+              ],
+              "location": "StepDefinitions.Loginsteps.user_enters_vaild_pravallikasample_gmail_com_and_Test(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Clicks on SignIn button",
+            "match": {
+              "location": "StepDefinitions.Loginsteps.clicks_on_SignIn_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User should be logged in successfully",
+            "match": {
+              "location": "StepDefinitions.Loginsteps.user_should_be_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]

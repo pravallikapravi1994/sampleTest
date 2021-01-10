@@ -1,0 +1,89 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-01T06:57:13.014Z",
+        "line": 13,
+        "name": "Verify if valid google search is working",
+        "description": "",
+        "id": "google-search-testing;verify-if-valid-google-search-is-working;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10820000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Browser is open",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2502000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is in on google search page",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.user_is_in_on_google_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2017000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Enters Testing Automation content",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.user_Enters_Testing_Automation_content()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5363000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Hits Enter",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.hits_Enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3227000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User shoud be navigated to  Search results",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.user_shoud_be_navigated_to_Search_results()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GoogleTest"
+          }
+        ]
+      }
+    ],
+    "name": "Google search testing",
+    "description": "",
+    "id": "google-search-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GoogleSearch.feature",
+    "tags": []
+  }
+]
